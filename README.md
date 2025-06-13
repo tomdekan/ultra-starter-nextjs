@@ -13,9 +13,6 @@ pnpm install
 pnpm dev
 ```
 
-## To add Google sign in
-Sign in with Google guide: [https://tomdekan.com/articles/google-sign-in-nextjs](https://tomdekan.com/articles/google-sign-in-nextjs)
-
 ## To add payments with Stripe
 To activate payments:
 1. Create at least one product with a priceId on your Stripe dashboard.
@@ -27,5 +24,8 @@ stripe listen
 ```bash
 stripe listen --forward-to localhost:3000/api/webhook
 ```
+
+## To add Google sign in
+Sign in with Google guide: [https://tomdekan.com/articles/google-sign-in-nextjs](https://tomdekan.com/articles/google-sign-in-nextjs)
 
 
