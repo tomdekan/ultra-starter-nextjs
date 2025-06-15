@@ -38,7 +38,11 @@ docker run --name my-postgres -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -d po
 docker exec -it my-postgres psql -U postgres -c "CREATE DATABASE myapp;"
 ```
 
-- Update your env vars in your `.env.local` to match your local Postgres database. 
+- Update your env vars in your `.env` to match your local Postgres database. 
+
+```
+npx @better-auth/cli@latest generate --y
+```
 
 Sign in with Google guide: [https://tomdekan.com/articles/google-sign-in-nextjs](https://tomdekan.com/articles/google-sign-in-nextjs)
 
