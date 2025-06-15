@@ -26,6 +26,20 @@ stripe listen --forward-to localhost:3000/api/webhook
 ```
 
 ## To add Google sign in
+
+Add a local postgres database for testing.
+
+You can do this with docker (below) or manually.
+```
+# Pull and run PostgreSQL in one command
+docker run --name my-postgres -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -d postgres
+
+# Connect to create your database
+docker exec -it my-postgres psql -U postgres -c "CREATE DATABASE myapp;"
+```
+
+- Update your env vars in your `.env.local` to match your local Postgres database. 
+
 Sign in with Google guide: [https://tomdekan.com/articles/google-sign-in-nextjs](https://tomdekan.com/articles/google-sign-in-nextjs)
 
 
